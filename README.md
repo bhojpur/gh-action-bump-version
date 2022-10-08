@@ -109,7 +109,7 @@ The tag is not added to the git repository  (optional). Example:
 No commit is made after the version is bumped (optional). Must be used in combination with `skip-tag`, since if there's no commit, there's nothing to tag. Example:
 ```yaml
 - name:  'Automated Version Bump'
-  uses:  'phips28/gh-action-bump-version@master'
+  uses:  'bhojpur/gh-action-bump-version@master'
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   with:
@@ -121,7 +121,7 @@ No commit is made after the version is bumped (optional). Must be used in combin
 If true, skip pushing any commits or tags created after the version bump (optional). Example:
 ```yaml
 - name:  'Automated Version Bump'
-  uses:  'phips28/gh-action-bump-version@master'
+  uses:  'bhojpur/gh-action-bump-version@master'
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   with:
@@ -132,7 +132,7 @@ If true, skip pushing any commits or tags created after the version bump (option
 Param to parse the location of the desired package.json (optional). Example:
 ```yaml
 - name:  'Automated Version Bump'
-  uses:  'phips28/gh-action-bump-version@master'
+  uses:  'bhojpur/gh-action-bump-version@master'
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     PACKAGEJSON_DIR:  'frontend'
